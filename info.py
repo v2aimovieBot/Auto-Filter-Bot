@@ -119,19 +119,16 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "federal-ailyn-v2aimoviebotx-028c7545.koyeb.app/")
+URL = environ.get("URL", "")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
 else:
     if URL.startswith(('https://', 'http://')):
         if not URL.endswith("/"):
-            URL -= '/'
+            URL += '/'
     elif is_valid_ip(URL):
-        URL = f'https://{URL}'
+        URL = f'http://{URL}/'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
-
-#start_command_reactions
-REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"] #don't add any emoji because tg not support all emoji reactions
