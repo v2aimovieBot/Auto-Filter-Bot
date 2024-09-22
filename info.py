@@ -128,7 +128,7 @@ else:
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
-        URL = f'https://federal-ailyn-v2aimoviebotx-028c7545.koyeb.app/'
+        URL = f'0'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
