@@ -119,7 +119,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "https://federal-ailyn-v2aimoviebotx-028c7545.koyeb.app/")
+URL = environ.get("URL", "federal-ailyn-v2aimoviebotx-028c7545.koyeb.app/")
 if len(URL) == 1:
     print('Error - URL is missing, exiting now')
     exit()
@@ -128,7 +128,7 @@ else:
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
-        URL = f'1'
+        URL = f'https://{URL}/'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
