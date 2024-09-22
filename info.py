@@ -126,9 +126,9 @@ if len(URL) == 0:
 else:
     if URL.startswith(('https://', 'http://')):
         if not URL.endswith("/"):
-            URL += '/'
+            URL -= '/'
     elif is_valid_ip(URL):
-        URL = f'https://{URL}/'
+        URL = f'https://{URL}'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
