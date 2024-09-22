@@ -128,7 +128,7 @@ else:
         if not URL.endswith("/"):
             URL += '/'
     elif is_valid_ip(URL):
-        URL = f'0'
+        URL = f'1'
     else:
         print('Error - URL is not valid, exiting now')
         exit()
