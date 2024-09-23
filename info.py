@@ -119,7 +119,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "doubtful-aeriela-v2aimoviebotx-4535a705.koyeb.app/")
+    URL = environ.get("URL", "doubtful-aeriela-v2aimoviebotx-4535a705.koyeb.app/") #if heroku then paste the app link here ex: https://heroku......./
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
