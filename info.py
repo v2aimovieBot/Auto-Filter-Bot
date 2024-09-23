@@ -110,3 +110,6 @@ SHORTLINK = is_enabled('SHORTLINK', False)
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'http://graph.org/file/cacbbea472e5a48ce0d64.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'sampleupi@upi')
+
+#start_command_reactions
+REACTIONS = ["🤝", "😇", "🤗", "😍", "👍", "🎅", "😐", "🥰", "🤩", "😱", "🤣", "😘", "👏", "😛", "😈", "🎉", "⚡️", "🫡", "🤓", "😎", "🏆", "🔥", "🤭", "🌚", "🆒", "👻", "😁"] #don't add any emoji because tg not support all emoji reactions
