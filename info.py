@@ -110,25 +110,3 @@ SHORTLINK = is_enabled('SHORTLINK', False)
 #premium info
 PAYMENT_QR = environ.get('PAYMENT_QR', 'http://graph.org/file/cacbbea472e5a48ce0d64.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'sampleupi@upi')
-
-# for stream
-IS_STREAM = is_enabled('IS_STREAM', False)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002329765381")
-if len(BIN_CHANNEL) == 0:
-    print('Error - BIN_CHANNEL is missing, exiting now')
-    exit()
-else:
-    BIN_CHANNEL = int(BIN_CHANNEL)
-    URL = environ.get("URL", "doubtful-aeriela-v2aimoviebotx-4535a705.koyeb.app/") #if heroku then paste the app link here ex: https://heroku......./
-if len(URL) == 0:
-    print('Error - URL is missing, exiting now')
-    exit()
-else:
-    if URL.startswith(('https://', 'http://')):
-        if not URL.endswith("/"):
-            URL += '/'
-    elif is_valid_ip(URL):
-        URL = f'http://{URL}'
-    else:
-        print('Error - URL is not valid, exiting now')
-        exit()
