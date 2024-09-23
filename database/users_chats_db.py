@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from info import DATABASE_NAME, DATABASE_URL, IMDB_TEMPLATE, WELCOME_TEXT, LINK_MODE, TUTORIAL, SHORTLINK_URL, SHORTLINK_API, SHORTLINK, FILE_CAPTION, IMDB, WELCOME, SPELL_CHECK, PROTECT_CONTENT, AUTO_FILTER, AUTO_DELETE, IS_STREAM, VERIFY_EXPIRE, IS_PM_SEARCH
+from info import DATABASE_NAME, DATABASE_URL, IMDB_TEMPLATE, WELCOME_TEXT, LINK_MODE, TUTORIAL, SHORTLINK_URL, SHORTLINK_API, SHORTLINK, FILE_CAPTION, IMDB, WELCOME, SPELL_CHECK, PROTECT_CONTENT, AUTO_FILTER, AUTO_DELETE, VERIFY_EXPIRE, IS_PM_SEARCH
 import time
 import datetime
 
@@ -22,8 +22,7 @@ class Database:
         'shortlink': SHORTLINK,
         'tutorial': TUTORIAL,
         'links': LINK_MODE,
-        'fsub': "",
-        'is_stream': IS_STREAM
+        'fsub': ""
     }
 
     default_verify = {
