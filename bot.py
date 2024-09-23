@@ -13,7 +13,7 @@ from aiohttp import web
 from typing import Union, Optional, AsyncGenerator
 
 # local imports
-from info import LOG_CHANNEL, API_ID, API_HASH, BOT_TOKEN, PORT, BIN_CHANNEL, ADMINS, DATABASE_URL
+from info import LOG_CHANNEL, API_ID, API_HASH, BOT_TOKEN, PORT, ADMINS, DATABASE_URL
 from utils import temp, get_readable_time
 
 # pymongo and database imports
